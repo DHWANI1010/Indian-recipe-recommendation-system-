@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 
 from recommender import DIETS, RecipeRecommender
+rec = RecipeRecommender("IndianFoodDatasetCSV.csv")   # fitted once at startup
 
 app = Flask(__name__)
 rec = RecipeRecommender("IndianFoodDatasetCSV.csv")   # fitted once at startup
